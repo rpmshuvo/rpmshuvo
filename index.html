@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehedi Hasan Shuvo | Software Engineer</title>
     <style>
+        /* Base Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -12,46 +20,72 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f2f5;
+            background: linear-gradient(135deg, #2c3e50, #4e6a82);
             color: #333;
         }
+
+        /* Profile Container Styling */
         .profile-container {
             text-align: center;
-            background-color: #ffffff;
-            padding: 30px;
-            max-width: 500px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            padding: 40px;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
         }
+        .profile-container:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Profile Image */
         .profile-container img {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
         }
+        .profile-container img:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Profile Title */
         .profile-container h1 {
             color: #2c3e50;
             font-size: 2em;
-            margin: 0;
+            margin-bottom: 5px;
+            transition: color 0.3s;
         }
+        .profile-container h1:hover {
+            color: #0077b5;
+        }
+
+        /* Profile Description */
         .profile-container p {
             font-size: 1.1em;
-            margin-top: 10px;
+            color: #555;
             line-height: 1.6;
+            margin-top: 10px;
         }
+
+        /* LinkedIn Button */
         .profile-container a {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 1em;
             color: #fff;
-            background-color: #0077b5;
+            background: linear-gradient(135deg, #0077b5, #005582);
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
+            transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
         .profile-container a:hover {
-            background-color: #005582;
+            background: linear-gradient(135deg, #005582, #003f5c);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
